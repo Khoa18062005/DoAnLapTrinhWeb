@@ -1,0 +1,76 @@
+body{
+    max-width: 1535px;
+    min-width: 700px; /*Không nhỏ hơn 60% View of Width (vw)*/
+    padding: 0px 0px;
+    margin: 0px;
+}
+button{
+    cursor: pointer;
+}
+.Cover{
+    display: flex;
+    justify-content: center;   /* Căn giữa ngang */
+    align-items: center;       /* Căn giữa dọc */
+    width: 100%;
+    height: 300px;
+    background-color: #a1c9f1;
+    border-radius: 10px;
+}   
+.Cover img{
+    width: 99%;
+    height: 94%;
+    border-radius: 10px;
+}
+.Controller{
+    margin-top: 10px;
+    display: flex;          /* bắt buộc để xếp ngang */
+    flex-direction: row;    /* mặc định là row, nhưng ghi rõ cho chắc */
+    /* align-items: center;    căn giữa theo chiều dọc */
+    gap: 10px;              /* khoảng cách giữa các phần tử */
+    /* flex-wrap: wrap; Cho phép xuống hàng */
+}
+.search-container{
+    flex: 70%;
+}
+.search-container input{
+    width: calc(100% - 70px);
+    height: 50px;
+    border-radius: 8px;
+    border: 2px solid grey;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    padding: 10px /*Cách 10px lề bên trái khi nhập dữ liệu*/
+}
+.search-container input::placeholder{
+    font-size: 20px;
+    font-style: italic;
+}
+.search-container i{
+    height: 50px;
+    width: 50px;
+}
+.buttons{
+    display: flex;
+    flex: 20%;
+    justify-content: space-between; /* Tạo khoảng cách đều giữa các nút */
+    gap: 10px;
+}
+.buttons button{
+    flex: 1; /* mỗi nút tự giãn đều nhau */
+    background-color: rgba(0,0,0,0);
+    border-radius: 4px;
+    font-size: 1rem; /* font co theo root size */
+    border: 2px solid grey;
+    width: 100px;
+    height: 50px;
+}
+.buttons button:hover{
+    background-color: #228BE6;
+    color: white;
+    border: #228BE6;
+}
+.picture img{
+    flex: 10%;
+    height: 50px;
+    width: 100px;
+}
