@@ -59,12 +59,14 @@ button{
     flex: 1; /* mỗi nút tự giãn đều nhau */
     background-color: rgba(0,0,0,0);
     border-radius: 4px;
-    font-size: 1rem; /* font co theo root size */
+    font-size: 15px;
+    /* font-size: 1rem; font co theo root size */
     border: 2px solid grey;
     width: 100px;
     height: 50px;
 }
 .buttons button:hover{
+    box-shadow: 0px 0px 6px grey;
     background-color: #228BE6;
     color: white;
     border: #228BE6;
@@ -73,4 +75,7 @@ button{
     flex: 10%;
     height: 50px;
     width: 100px;
+}
+.search-container input:hover{
+    box-shadow: 0px 0px 6px grey;   
 }
